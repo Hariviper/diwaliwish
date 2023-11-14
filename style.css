@@ -1,0 +1,455 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background: url(https://images.unsplash.com/photo-1588140631690-51bcbde65b28?q=80&w=1885&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)no-repeat;
+    background-size:cover;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(16, 1, 1, 0.916);
+   
+ 
+}
+.header a{
+    color: white;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.logo a{
+    font-size: 20px;
+}
+.logo img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.header-content{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    
+    justify-content: space-around;
+    align-items: center;
+}
+.dropdown{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.rangoli-dropdown{
+    position: absolute;
+    top: 100px;
+    display: none;
+    width: 300px;
+    border: 1px solid black;
+    background:transparent;
+    z-index: 1;
+    
+}
+.dropdown:hover .rangoli-dropdown{
+    display: block;
+    
+}
+
+.rangoli a{
+    color: white;
+    height: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    width: 100%;
+}
+.rangoli a:hover{
+    color: gold;
+    background: rgba(0, 0, 0, 0.378);
+}
+
+.rangoli{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.one{
+    height: 100%;
+    padding-top:52% ;
+    padding-left: 5px;
+    padding-right:5px ;
+   
+    
+}
+.one:hover{
+    border-bottom: 2px solid yellow;
+    background-color: rgba(0, 0, 0, 0.605);
+    color: yellow;
+}
+.mid-card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+
+}
+.two{
+    height: 100%;
+    padding:40px 3px 0 3px ;
+    padding-left: 5px;
+    padding-right:5px ;
+}
+.two:hover{
+    border-bottom: 2px solid yellow;
+    background-color:rgba(0, 0, 0, 0.605) ;
+    color: yellow;
+}
+.img-card{
+    width: 80%;
+    opacity: 85%;
+}
+.img-card img{
+    width: 100%;
+}
+.profile-img{
+    background: rgba(255, 255, 255, 0.681);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 12%;
+    top: -100px;
+    z-index: 2;
+
+}
+.profile-img img{
+    width: 95%;
+    border-radius: 50%;
+}
+.profile-content{
+    width: 80%;
+    height: auto;
+    background-color:transparent;
+    position: relative;
+    left: 10%;
+    top: -200px;
+    z-index: 1;
+    display: flex;
+    gap: 5px;
+}
+.sidebar-cards{
+    width: 22%;
+}
+
+.sidebar-cards img{
+    width: 100%;
+}
+.social-meadia{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.names{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.names strong:hover{
+    color: brown;
+}
+.instagram a:hover{
+    color: brown;
+}
+.content{
+    width: 78%;
+    height: 1150px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.849);
+    border: 3px solid brown;
+}
+
+.content::-webkit-scrollbar{
+    display: none;
+}
+.sidebar-cards{
+    background-color:transparent;
+    width: 40%;
+    height: 1150px;
+    
+}
+.bio{
+    background-color: rgba(254, 254, 254, 0.74);
+    height: 250px;
+    width: 100%;
+    position:relative;
+    border: 3px solid brown;
+    padding: 10px;
+}
+.quote-content{
+    width: 100%;
+    height: 900px;
+    overflow: scroll;
+}
+.quote-content::-webkit-scrollbar{
+    display: none;
+}
+.sidebar-content{
+    width: 100%;
+    height: auto;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 5px;
+    gap: 100px;
+ 
+}
+.sidebar-content img{
+    width: 700px;
+    height: 450px;
+}
+.main-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 5px;
+}
+.quote-cards{
+    width: 100%;
+    height: auto;
+    background-color:transparent;
+}
+.cards{
+    margin-top: 25px;
+    width: 100%;
+    height: 500px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.778);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 15px 0 15px;
+    border: 3px solid brown;
+        
+}
+.cards p{
+    text-align: center;
+}
+.cards p:hover{
+    color:rgb(251, 241, 241);
+    background: rgba(0, 0, 0, 0.238);
+}
+.cards:hover{
+    background-color: rgba(255, 255, 255, 0.403);
+}
+
+.main-content img{
+    width: 700px;
+    height: 450px;
+    padding: 20px;
+}
+.sidebar-content h1:hover{
+    color: rgb(70, 8, 8);
+    
+
+}
+.content-heading h1{
+    color: red;
+}
+.animated-cards-container{
+    position: relative;
+    top: -145px;
+    width: 100%;
+    height: auto;
+    background: url(https://www.shutterstock.com/shutterstock/videos/1107011037/thumb/1.jpg?ip=x480)no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+}
+.div-text-pic-animation{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 50px;
+}
+.div-text-pic-animation h2:hover{
+    color: gold;
+
+}
+.potrait-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 25px;
+    padding: 50px;
+}
+.potrait{
+    height: 400px;
+    width: 300px;
+    position: relative;
+    border-radius: 25px;
+    border: 2px solid brown;
+}
+.potrait img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background:rgba(0, 0, 0, 0.618);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+    padding: 10px;
+    transition: 0.3s ease-out;
+    border-radius: 25px;
+}
+.img-text{
+    color: white;
+}
+.potrait:hover .overlay{
+    opacity: 1;
+    border: 3px solid greenyellow;
+}
+.overlay-text{
+    display: flex;
+    justify-content: center;
+    color: white;
+    border-bottom: 2px solid yellow;
+}
+.footer{
+    width: 100%;
+    height: 300px;
+    background:url(https://www.shutterstock.com/image-vector/website-header-banner-design-illustration-260nw-1160905015.jpg)no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.section-one{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-content-one{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-terms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-terms a{
+    padding: 5px;
+    color: white;
+    
+
+}
+.footer-terms a:hover{
+    border-bottom: 2px solid yellow;
+
+}
+.footer-terms p{
+    color: white;
+}
+.footer-terms p:hover{
+    border-bottom: 2px solid yellow;
+}
+.section-two{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.footer-logo a{
+    color: white;
+    font-size: 40px;
+
+}
+.footer-social{
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+.submit{
+    padding: 5px;
+    border-radius:10px ;
+    background-color: rgba(10, 10, 245, 0.804);
+    border: none;
+    color: white;
+}
+.submit:hover{
+    background-color: brown;
+}
+.footer-joinus-content input{
+    padding: 5px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+}
+.footer-social svg:hover{
+    color: white;
+}
+audio{
+    display: none;
+}
+.github:hover{
+    color: brown;
+}
+.github a:hover{
+    color: brown;
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diwali History</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    
+    <style>
+        body{
+            display: flex;
+
+            height: 100vh;
+            padding: 0%;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            font-family: "Roboto", sans-serif;
+            background:linear-gradient(120deg,  #4a1010 30%, #f5e6b1 60%,  #4a1010 50%);
+        }
+        img{
+            width: 100%;
+            height: 100%;
+
+        }
+        .book{
+            display: flex;
+
+        }
+        #cover{
+            width: 250px;
+            height: 400px;
+        }
+        .flip-book{
+            width: 250px;
+            height: 400px;
+            position: relative;
+            perspective: 1500px;
+
+        }
+        .flip{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform-origin: left;
+            transform-style: preserve-3d;
+            transform: rotateY(0deg);
+            transition: .5s;
+
+        }
+        p{  font-family: 'Dancing Script', cursive;
+            font-size: large;
+            line-height: 24px;
+            color: rgb(7, 6, 6);
+        }
+        .front{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgb(248, 227, 125);
+            background: url(https://t4.ftcdn.net/jpg/00/92/47/85/240_F_92478590_BbuqPZQDFPOOjIbhQajB3oq2z5cfsVZt.jpg)no-repeat;
+            background-size: cover;
+            
+            box-sizing: border-box;
+            padding: 0 13px;
+            box-shadow: inset 20px 0 50px rgba(0,0,0,0.5) 0, 2px, 5px rgba(0,0,0,.5);
+
+        }
+        .back{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 99;
+            transform: rotateY(180deg);
+            backface-visibility: hidden;
+            background-color: #000;
+            
+        }
+        .next-btn{
+            position: absolute;
+            bottom: 13px;
+            right: 13px;
+            cursor: pointer;
+            color: #000;
+            background-color: rgba(255, 255, 255, 0.578);
+            padding: 2px;
+            border-radius: 2px;
+        }
+        .back-btn{
+            position: absolute;
+            bottom: 13px;
+            right: 13px;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.581);
+            color:black;
+            padding: 2px;
+            border-radius: 2px;
+            
+        }
+        #p1{
+            z-index: 3;
+        }
+        #p2{
+            z-index: 2;
+        }
+        #p3{
+            z-index: 1;
+        }
+        #c1:checked ~ .flip-book #p1{
+            transform: rotateY(-180deg);
+            z-index: 1;
+
+        }
+        #c2:checked ~ .flip-book #p2{
+            transform: rotateY(-180deg);
+            z-index: 1;
+
+        }
+        #c3:checked ~ .flip-book #p3{
+            transform: rotateY(-180deg);
+            z-index: 1;
+
+        }
+        h2{
+            text-shadow: 2px 3px 5px rgb(246, 204, 142);
+            color: #1a0a0ada;
+        }
+        #c1{
+            position: relative;
+            left: 250px;
+            z-index: -1;
+        }
+        #c2{
+            position: relative;
+            left: 250px;
+            z-index: -1;
+        }
+        #c3{
+            position: relative;
+            left: 250px;
+            z-index: -1;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+        <div class="book">
+        
+        <input type="checkbox" id="c1">
+        <input type="checkbox" id="c2">
+        <input type="checkbox" id="c3">
+        
+        <div id="cover"><img src="https://lh3.googleusercontent.com/ci/ALr3YSEfXLyyROwGWB5BQkDnwPHWLgMN0-OnjG_N9I6Ff563sDG_YG-iZVIl-Y0jB30dVa0QPTiEjtQ=s1200" alt=""></div>
+        <div class="flip-book">
+        <div class="flip" id="p1">
+        <div class="back">
+        <img src="https://i0.wp.com/www.trafalgar.com/real-word/wp-content/uploads/sites/3/2020/09/lakshmi-diwali-story.jpeg?resize=810%2C845&ssl=1" alt="">
+        <label class="back-btn" for="c1">Back</label>
+        </div>
+        <div class="front">
+        <h2>Diwali History</h2>
+        <p>Diwali, also known as Deepavali, is one of the most widely celebrated festivals in India, marking the triumph of light over darkness and good over evil. The word "Diwali" is derived from the Sanskrit word "Deepavali," which means a row of lights. The festival usually spans five days, with the main celebration occurring on the third day.
+        </p>
+        <label class="next-btn" for="c1">Next</label>
+
+            </div>
+
+        </div>
+        <div class="flip" id="p2">
+            <div class="back">
+            <img src="https://i.pinimg.com/564x/c4/5a/24/c45a24dcf763ee0e4284a276c57bd77a.jpg" alt="">
+            <label class="back-btn" for="c2">Back</label>
+            </div>
+            <div class="front">
+            <p>The history of Diwali can be traced back to ancient times, with its roots in various legends and religious beliefs. One significant narrative associated with Diwali is the return of Lord Rama, along with his wife Sita and loyal companion Lakshmana, to Ayodhya after defeating the demon king Ravana. The people of Ayodhya illuminated the entire city with oil lamps to welcome their beloved prince,
+                symbolizing the victory of righteousness.
+
+            </p>
+            <label class="next-btn" for="c2">Next</label>
+    
+                </div>
+    
+        </div>
+        <div class="flip" id="p3">
+            <div class="back">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJc5rdZEG5WwJYOcBiypmgUFxhoWyskh_-VA&usqp=CAU" alt="">
+            <label class="back-btn" for="c3">Back</label>
+            </div>
+            <div class="front">     
+            <p>The festival is not confined to India and is celebrated by millions of people worldwide, transcending cultural and religious boundaries. Diwali has become a symbol of joy, unity, and the triumph of good over evil.
+                Traditionally, Diwali preparations involve cleaning and decorating homes, purchasing new clothes, preparing festive meals, and exchanging gifts with family and friends.
+                Diwali not only holds religious significance but also fosters a sense of togetherness and community bonding. 
+                </p>
+            <label class="next-btn" for="c3">Next</label>
+    
+                </div>
+    
+        </div>
+
+
+        </div>        
+        </div>
+
+    
+</body>
+</html>

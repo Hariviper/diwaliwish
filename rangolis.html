@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rangoli img</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            color: aliceblue;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            background: url(https://static.vecteezy.com/system/resources/previews/025/391/858/non_2x/happy-diwali-festival-greeting-background-generated-by-ai-free-photo.jpg)no-repeat;
+            background-size: cover;
+        }
+        .header{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: rgba(16, 1, 1, 0.916);
+        
+        
+        }
+        .header a{
+            color: white;
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+        .logo a{
+            font-size: 20px;
+        }
+        .logo img{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+        }
+        .header-content{
+            display: flex;
+            width: 40%;
+            height: 100%;
+            
+            justify-content: space-around;
+            align-items: center;
+        }
+        .dropdown{
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .rangoli-dropdown{
+            position: absolute;
+            top: 100px;
+            display: none;
+            width: 300px;
+            border: 1px solid black;
+            background:transparent;
+            z-index: 1;
+            
+        }
+        .dropdown:hover .rangoli-dropdown{
+            display: block;
+            
+        }
+
+        .rangoli a{
+            color: white;
+            height: 100%;
+            padding: 10px;
+            border: 1px solid black;
+            width: 100%;
+        }
+        .rangoli a:hover{
+            color: gold;
+            background: rgba(0, 0, 0, 0.378);
+        }
+
+        .rangoli{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .one{
+            height: 100%;
+            padding-top:52% ;
+            padding-left: 5px;
+            padding-right:5px ;
+        
+            
+        }
+        .one:hover{
+            border-bottom: 2px solid yellow;
+            background-color: rgba(0, 0, 0, 0.605);
+            color: yellow;
+        }
+        .two{
+            height: 100%;
+            padding:40px 3px 0 3px ;
+            padding-left: 5px;
+            padding-right:5px ;
+        }
+        .two:hover{
+            border-bottom: 2px solid yellow;
+            background-color:rgba(0, 0, 0, 0.605) ;
+            color: yellow;
+        }
+        .flex{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .container{
+            width: 80%;
+            height: 500px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .container img{
+            height: 400px;
+            width: 400px;
+        }
+        .text{
+            width: 50%;
+
+        }
+        .container1 img{
+            display: flex;
+            justify-content: center;
+
+        }
+        .heading{
+            display: flex;
+            height: 100px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .footer{
+            width: 100%;
+            height: 300px;
+            background:url(https://www.shutterstock.com/image-vector/website-header-banner-design-illustration-260nw-1160905015.jpg)no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
+        }
+        .section-one{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .footer-content-one{
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .footer-terms{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer-terms a{
+            padding: 5px;
+            color: white;
+            
+
+        }
+        .footer-terms a:hover{
+            border-bottom: 2px solid yellow;
+
+        }
+        .footer-terms p{
+            color: white;
+        }
+        .footer-terms p:hover{
+            border-bottom: 2px solid yellow;
+        }
+        .section-two{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .footer-logo{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .footer-logo a{
+            color: white;
+            font-size: 40px;
+
+        }
+        .footer-social{
+            width: 10%;
+            display: flex;
+            justify-content: space-around;
+        }
+        .submit{
+            padding: 5px;
+            border-radius:10px ;
+            background-color: rgba(10, 10, 245, 0.804);
+            border: none;
+            color: white;
+        }
+        .submit:hover{
+            background-color: brown;
+        }
+        .footer-joinus-content input{
+            padding: 5px;
+            width: 200px;
+            border-radius: 10px;
+            border: none;
+        }
+        .footer-social svg:hover{
+            color: white;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="https://img.freepik.com/free-vector/happy-diwali-diya-oil-lamp-festival-card-background_1035-14829.jpg?w=740&t=st=1699602070~exp=1699602670~hmac=42b760c3e8195e97386e5fc8cbb1606ee80d14efde1c8f1d7ee87183497d9241" alt="">
+            <a href="#">Diwali</a>
+        </div>
+        <div class="header-content">
+            <a class="two" href="./index.html">Home</a>
+            <a class="two" href="./history.html">History</a>
+            
+            <div class="dropdown">
+                <a class="one" href="#">rangolis</a>
+            <div class="rangoli-dropdown">
+                <div class="rangoli">
+                    <a href="./rangolis.html"> Top 10 rangolis</a>
+                    <a href="./diya.html"> Top 10 diya designs</a>
+                    <a href="./celebrate.html"> Top 10 diwali poses</a>
+                    
+                </div>
+            </div>
+            </div>
+            <a class="two" href="./LazyOWLs.html">Portfolio</a>
+            
+         
+        </div>
+
+    </header>
+    <div class="heading">
+        <h2>Top 10 Rangoli designs</h2>
+    </div>
+    <div class="flex">
+        <div class="container">
+            <img src="https://img.staticmb.com/mbcontent/images/uploads/2022/9/simple-rangoli-design.jpg" alt="">
+            <div class="text">
+                <h1>Peacock rangolis</h1>
+                <p>Peacock rangoli, a vibrant art form, adorns homes during Diwali, radiating joy and prosperity. Its intricate patterns and vivid colors symbolize the festival's celebratory spirit, while the peacock motif represents beauty and good fortune. The dazzling display captivates hearts, enhancing the festive ambiance and fostering a sense of cultural richness.</p>
+            </div>
+        </div>
+        <div class="container">
+            <img src="https://i.pinimg.com/564x/fc/ea/8c/fcea8ce67b3bb455410456e0eb8a504a.jpg" alt="" height="200px" width="200px">
+            <div class="text">
+                <h1>Ganpati rangoli</h1>
+                <p>Ganpati rangoli during Diwali adds vibrant charm with intricate designs, symbolizing prosperity and auspicious beginnings. Its radiant colors and spiritual motifs create a festive ambiance, invoking blessings of Lord Ganesha. The artistry reflects cultural richness, fostering joy and unity, making Diwali celebrations visually captivating and spiritually uplifting.</p>
+            </div>
+        </div>
+        <div class="container">
+            <img src="https://i.ytimg.com/vi/pZcGIpn40O4/maxresdefault.jpg" alt="">
+            <div class="text">
+                <h1>Designer rangoli</h1>
+                <p>Diwali, a festival of lights, captivates with its radiant displays, vibrant decorations, and joyous celebrations. The dazzling array of lamps, colorful rangoli, and sparkling fireworks create a mesmerizing spectacle, symbolizing the triumph of light over darkness. Diwali's warmth, unity, and cultural richness make it irresistibly attractive, fostering a sense of shared happiness.</p>
+            </div>
+        </div>
+        <div class="container">
+            <img src="https://static.tnnbt.in/thumb/msid-105103071,thumbsize-1455340,width-1280,height-720,resizemode-75/105103071.jpg" alt="">
+            <div class="text">
+                <h1>Dhantrodshi rangoli</h1>
+                <p>"Dhantrodshi rangoli" refers to rangoli patterns created during Diwali, symbolizing the triumph of light over darkness. Diwali, the Festival of Lights, illuminates homes with vibrant colors, diyas, and fireworks, celebrating the victory of good over evil. The joyous atmosphere, cultural significance, and dazzling decorations make Diwali irresistibly attractive, fostering unity and positivity.</p>
+            </div>
+        </div>
+        <div class="container">
+            <img src="https://i.ytimg.com/vi/Ztu-8KAK2YM/maxresdefault.jpg" alt="">
+            <div class="text">
+                <h1>Laxmi puja rangoli</h1>
+                <p>Diwali captivates with vibrant Laxmi Puja, an auspicious worship of wealth and prosperity. Intricate Rangoli designs adorn doorsteps, symbolizing joy and welcome. This festival illuminates homes with diyas, celebrating the triumph of light over darkness. Diwali's allure lies in its spiritual significance, cultural richness, and the joyous unity it fosters.</p>
+            </div>
+        </div>
+        <div class="container">
+            <img src="https://i.ytimg.com/vi/ENNPUi9ajh8/maxresdefault.jpg" alt="">
+            <div class="text">
+                <h1>Vasubaras rangoli</h1>
+                <p>Vasubaras is a day when cows are venerated in Hindu culture, marking the bond between farmers and their cattle. Rangoli, colorful decorative art, is a traditional Diwali practice symbolizing joy and prosperity. Diwali's allure lies in vibrant lights, festive gatherings, and the triumph of light over darkness, fostering a sense of unity and celebration.</p>
+            </div>
+        </div>
+        <div class="container">
+            <img src="https://www.eduvast.com/wp-content/uploads/2022/10/Diwali-Rangoli-Designs-1-782x440.jpg" alt="">
+            <div class="text">
+                <h1>Diwali Attractive</h1>
+                <p>Diwali, marked by vibrant festivities, illuminations, and joyous gatherings, captivates with its kaleidoscope of traditions. The allure of intricate rangoli designs adorning entrances and the radiant glow of countless diyas create a mesmerizing tapestry. Kalash, symbolizing prosperity, adds a touch of sacred splendor, making Diwali irresistibly attractive.</p>
+            </div>
+        </div>
+        <div class="container">
+            <img src="https://hindi.cdn.zeenews.com/hindi/sites/default/files/rangoli-5.jpg" alt="">
+            <div class="text">
+                <h1>Special rangoli</h1>
+                <p>Diwali, the festival of lights, is celebrated with vibrant rangoli designs adorning doorsteps. These intricately crafted patterns symbolize joy, prosperity, and the triumph of light over darkness. The beautifully arranged colors and patterns create a mesmerizing spectacle, enhancing the festive atmosphere and inviting positivity during this auspicious occasion.</p>
+            </div>
+        </div>
+        
+        
+        
+        <div class="container">          
+            
+                <img src="https://img.naidunia.com/naidunia/ndnimg/23102022/23_10_2022-best_rangoli_design_og.jpg" alt=""> 
+            <div class="text">
+                <h1>Unique rangoli</h1>
+                <p>Unique rangoli holds cultural significance as a traditional Indian art form. Created during festivals and special occasions, it symbolizes hospitality, good luck, and positive energy. Each design is distinct, reflecting creativity and individuality. The ritual of making rangoli fosters a sense of community and celebrates the beauty of diversity.</p>
+                
+            </div>
+        </div>
+        
+        
+        <div class="container">
+            <img src="https://i.ytimg.com/vi/Jpg-uDgu50Q/maxresdefault.jpg" alt="" height="400px" width="400px">
+            <div class="text">
+                <h1>Flower rangoli</h1>
+                <p>Diwali, the festival of lights, captivates with vibrant flowers and intricate rangoli designs that adorn homes. The brilliance of lamps symbolizes the triumph of good over evil, creating a mesmerizing ambiance. The joyous celebration unites families, ignites hope, and showcases the beauty of cultural traditions, making Diwali irresistibly attractive.</p>
+            </div>
+        </div>
+    
+    </div>
+    <div class="footer">
+        <div class="section-one">
+            <div class="footer-content-one">
+                <div class="footer-terms">
+                    <p>Tearms & conditions</p>
+                    <a href="#">home</a>
+                    <a href="#">home</a>
+                    <a href="#">home</a>
+                </div>
+                <div class="footer-terms">
+                    <p>Tearms & conditions</p>
+                    <a href="#">home</a>
+                    <a href="#">home</a>
+                    <a href="#">home</a>
+                </div>
+                <div class="footer-terms">
+                    <p>Tearms & conditions</p>
+                    <a href="#">home</a>
+                    <a href="#">home</a>
+                    <a href="#">home</a>
+                </div>
+            </div>
+            <div class="footer-content-two">
+                <div class="footer-joinus">
+                    <div class="footer-joinus-content">
+                        <input type="text" placeholder="enter gmail">
+                        <button class="submit">Submitt</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <hr>
+        <div class="section-two">
+            <div class="footer-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-amd" viewBox="0 0 16 16">
+                    <path d="m.334 0 4.358 4.359h7.15v7.15l4.358 4.358V0H.334ZM.2 9.72l4.487-4.488v6.281h6.28L6.48 16H.2V9.72Z"/>
+                </svg>
+                <a href="#">Ck.DevCodes</a>
+            </div>
+            <div class="footer-social">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
